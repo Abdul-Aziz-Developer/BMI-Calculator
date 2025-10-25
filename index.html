@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">BMI Calculator</h1>
+
+    <div class="input-group">
+      <label for="age">Age (2–120):</label>
+      <input type="number" id="age" min="2" max="120" placeholder="Enter age" />
+    </div>
+
+    <div class="input-group">
+      <label for="gender">Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="feet">Height:</label>
+      <div class="height-inputs">
+        <input type="number" id="feet" placeholder="Feet" />
+        <input type="number" id="inches" placeholder="Inches" />
+      </div>
+    </div>
+
+    <div class="input-group">
+    <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" placeholder="Enter weight in kilograms" />
+    </div>
+
+    <div class="buttons">
+      <button onclick="calculateBMI()">Calculate</button>
+      <button onclick="clearFields()">Clear</button>
+    </div>
+
+    <div id="result"></div>
+
+    <div id="bmiGaugeContainer">
+      <div id="bmiGauge"></div>
+    </div>
+
+    <div id="healthTip"></div>
+
+    <h3>BMI History</h3>
+    <ul id="historyList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

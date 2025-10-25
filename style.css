@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #26c7bf, #fcb69f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgb(140, 216, 180);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  width: 360px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #570d38;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #126e99;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.height-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.height-inputs input {
+  width: 48%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:first-child {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:last-child {
+  background-color: #df0707;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: #389c49;
+}
+
+#bmiGaugeContainer {
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+#bmiGauge {
+  height: 20px;
+  width: 0%;
+  transition: width 1s ease;
+}
+
+#healthTip {
+  margin-top: 10px;
+  font-style: italic;
+  color: #5c44c7;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#historyList {
+  max-height: 120px;
+  overflow-y: auto;
+  padding-left: 20px;
+  text-align: left;
+  margin-top: 10px;
+  font-style: italic;
+}
